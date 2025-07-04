@@ -5,6 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Created by
 ```
 npx create-react-app amount_parity
+npm install @mui/material @emotion/react @emotion/styled
+npm install react-redux
+npm install redux
+# npm audit fix --force
+# npm install react-scripts@latest
 ```
 
 ## explanation:
