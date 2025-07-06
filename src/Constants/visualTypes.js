@@ -1,7 +1,7 @@
-const visualTypes = Object.freeze({
+const visualTypesConstants = Object.freeze({
   SHOW_ALL: "showAll",
   SHOW_ACTIVE: "showActive",
   SHOW_COMPLETED: "showCompleted",
 });
 
-export default visualTypes;
+export default visualTypesConstants;

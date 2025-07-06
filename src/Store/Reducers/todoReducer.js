@@ -20,9 +20,17 @@ const reducer = (state = initialState, action) => {
                 todos: arr
             }
         case actionNames.CHANGE_STATUS:
-            return state;
+            const oldArray = [...state.todos]
+            oldArray[action.payload.index].completed = !oldArray[action.payload.index].completed
+            return {
+                ...state,
+                todos: oldArray
+            }
         case actionNames.CHANGE_VISIBILITY:
-            return state;
+            return {
+                ...state,
+                filter: action.payload.value
+            }
         default:
             return state;
     }
